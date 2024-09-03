@@ -1,0 +1,42 @@
+Package: scCalibratoR
+Type: Package
+Title: Alignment and Annotation Correction for Single-Cell RNA-seq Data
+Version: 0.99.0
+Authors@R: c(
+    person("Anthony", "Christidis", role = c("aut", "cre"), 
+            email = "anthony-alexander_christidis@hms.harvard.edu", 
+            comment = c(ORCID = "0000-0002-4565-6279")),
+    person("Andrew", "Ghazi", role = "aut"),
+    person("Ludwig", "Geistlinger", role = "aut"),
+    person("Robert", "Gentleman", role = "aut")
+  )
+Description: scCalibratoR is a Bioconductor package designed to address 
+    challenges in single-cell RNA sequencing (scRNA-seq) analysis, including 
+    batch effect correction and annotation refinement. The package enables 
+    the alignment of single-cell datasets to a trusted reference dataset, 
+    correcting for batch effects while preserving biological variability. 
+    Additionally, scCalibratoR identifies and corrects potential 
+    misannotations by highlighting the genes driving these discrepancies. 
+    Users can visualize the alignment and correction processes, ensuring more 
+    accurate and consistent results across diverse single-cell datasets.
+License: Artistic-2.0
+URL: https://github.com/ccb-hms/scCalibratoR
+BugReports: https://github.com/ccb-hms/scCalibratoR/issues
+Depends:
+    R (>= 4.4.0)
+VignetteBuilder: 
+    knitr
+biocViews:
+    Annotation,
+    Classification,
+    Clustering,
+    GeneExpression,
+    RNASeq,
+    SingleCell,
+    Software,
+    Transcriptomics
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
