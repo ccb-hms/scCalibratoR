@@ -14,15 +14,15 @@
 To install the development version of the package from GitHub use the following command:
 
 ``` r
-devtools::install_github("ccb-hms/scCalibratoR")
+BiocManager::install("ccb-hms/scCalibratoR")
 ```
 
-NOTE: you will need the [**remotes**](https://cran.r-project.org/web/packages/remotes/index.html) package to install from GitHub.
+NOTE: you will need the [**BiocManager**](https://cran.r-project.org/web/packages/BiocManager/index.html) package to install from Bioconductor.
 
 To build the package vignettes upon installation use:
 
 ``` r
-devtools::install_github("ccb-hms/scCalibratoR",
-                         build_vignettes = TRUE,
-                         dependencies = TRUE)
+BiocManager::install("ccb-hms/scCalibratoR",
+                     build_vignettes = TRUE,
+                     dependencies = TRUE)
 ```
